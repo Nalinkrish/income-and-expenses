@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;800;1000&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&display=swap');
+      
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe6e9;
+    display: grid;
+    place-items: center;
+
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    background-color: azure;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex; 
+}
+
+:-webkit-user-select{
+    -webkit-user-select: none;
+}
+
+.legder{
+    background-color:#2f3542;
+    padding: 20px;
+    flex: 1;
+    color: #fff;
+    
+}
+
+
+
+.legder h2{
+    text-transform: uppercase;
+    color: lightcoral;
+
+}
+
+
+
+.legder h2, 
+.legder h4,
+.legder h1 {
+    font-weight: 400;
+    margin-bottom: 2px;
+    padding: 2px;
+    font-size: 1rem;
+    
+}
+
+
+
+.inc-exp-container{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.inc-exp-container div{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    flex: 1;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.inc-exp-container div p{
+    font-size: 2px;
+}
+
+.inc-exp-container div.inc{
+    color: green;
+    border: 3px solid;
+    
+
+
+}
+
+
+.inc-exp-container div.exp{
+    color: red;  
+    border: 3px solid;
+    
+
+}
+
+#form{
+    padding: 5px;
+
+}
+
+.form-control{
+    margin-top: 5px;
+}
+
+.form-control .label{
+    display:inline-block;
+    margin:10px 0;
+    font-weight: 300;
+
+}
+label{
+    font-size:1rem
+
+}
+
+input[type="text"],
+input[type="number"]{
+    border: 1px solid #dedede;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding:10px;
+    border-radius: 2px;
+    font-size: 0.75rem;
+}
+
+.btn{
+    background-color:#2e86de ;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.transaction{
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+ 
+
+}
+.transaction h3{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 5px;
+    font-size: 1rem;
+
+}
+
+.trans{
+    list-style-type: none;
+
+}
+
+.trans li{
+    background-color: #fff;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    margin: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.02) 8px 1px 3px 8px, rgba(27, 31, 35, 0.15) 8px 8px 8px 1px;
+}
+
+.trans li.inc{
+    border-left:5px solid green;
+
+}
+
+.trans li.exp{
+    border-left:5px solid red;
+
+}
+
+.btn-del{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    font-size: 10px;
+    line-height: 20px;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.trans li:hover .btn-del{
+    opacity: 1;
+}
+
+/* srcoll bar good one */ 
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color:#fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #2e86de;
+    border-radius: 8px;
+}
